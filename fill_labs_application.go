@@ -29,14 +29,12 @@ func q_1(in [] string) [] string{
 	Q2) Write a recursive function which takes one integer parameter. Please bear in mind that
 		finding the algorithm needed to generate the output below is the main point of the question.
 	*/
-	func q_2(in int) int{
+	func q_2(in int) {
 		if in == 1 {
-			return 1
-		}else{
-			return q_2(in/2)
-			// fmt.Println(in)
+			return 
 		}
-
+		q_2(in/2)
+		fmt.Println(in)
 	}
 /*
 	Q3) Write a function which takes one parameter as an array/list. Find most repeated data
@@ -65,9 +63,9 @@ func q_1(in [] string) [] string{
 
 func main() {
 	// in := []string{"aaaasd", "a", "aab", "aaabcd", "ef", "cssssssd", "fdz", "kf", "zc", "lklklklklklklklkl", "l"}
-	arr := []string{"apple","pie","apple","red","red","red"}
+	// arr := []string{"apple","pie","apple","red","red","red"}
 	// fmt.Println(q_1(in))
-	// fmt.Println(q_2(9))
-	fmt.Println(q_3(arr))
+	q_2(9)
+	// fmt.Println(q_3(arr))
 
 }
